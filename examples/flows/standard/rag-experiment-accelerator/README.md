@@ -58,8 +58,9 @@ To run the **RAG Experiment Accelerator** end-to-end in VSCode, follow these ste
 3. Create a custom connection. See [env_setup](./env_setup.md).
 4. Add your own documents to the `./data` folder. (a set of sample documents are provided for testing purposes)
 5. Copy the `config.sample.json` to `config.json`, run `cp ./config.sample.json ./config.json` and modify file with the hyperparameters for your experiment. Full documentation on the configuration elements can be found [here](#description-of-configuration-elements)
-6. Run the flow from the extension UI or from the CLI by running `pf flow test --flow ./flow.dag.yaml`
-7. Inspect the results in your ML workspace by selecting the `Jobs` tab under `Assets`. Click on the latest experiment run to view the metrics and results.
+6. In `examples/flows/standard/rag-experiment-accelerator/flow.dag.yaml`, update the `config_dir` input with the absolute path of the `config.json` directory.
+7. Run the flow from the extension UI or from the CLI by running `pf flow test --flow ./flow.dag.yaml`
+8. Inspect the results in your ML workspace by selecting the `Jobs` tab under `Assets`. Click on the latest experiment run to view the metrics and results.
 
 
 ### ML Workspace

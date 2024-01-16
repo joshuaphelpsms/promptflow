@@ -10,7 +10,7 @@ inputs:
     default: true
   config_dir:
     type: string
-    default: .
+    default: /workspaces/promptflow/examples/flows/standard/rag-experiment-accelerator
   should_generate_qa:
     type: bool
     default: true
